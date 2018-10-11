@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+
+<html lang = "en">
+<head>
+
+<link rel = "stylesheet" href = "loan.css">
+<script type = "text/javascript" src= "loan.js">
+
+</script>
+<title>Calculator2</title>
+</head>
+
+<body>
+
+<div id= "container">
+
+<h2>Loan Installment Calculator</h2>
+
+<div id = "loan_src">
+
+<form name= "loan_form">
+
+	<table style = "margin:10px">
+		<tr>
+					<td>Loan Amount: <br/> <span class = "exa">(Any Currency)</span></td>
+					<td><input type ="text" name = "loan_amt" size ="10" placeholder = "0"/></td>
+				
+				</tr>
+				
+				<tr>
+					<td>Number of Months: </td>
+					<td><input type ="text" name = "months" size ="10" placeholder = "0" /></td>
+				
+				</tr>
+				
+				<tr>
+					<td>Annual Interest Rate: <br/> <span class = "exa">(%)</span> </td>
+					<td><input type ="text" name = "rate" size ="10" placeholder = "0%"/></td>
+				
+				</tr>
+				
+				<tr>
+					<td>Extra Monthly payment: </td>
+					<td><input type ="text" name = "extra" size ="10" placeholder = "0"/></td>
+				
+				</tr>
+				
+				<tr>
+					<td><input type ="button" onclick = "validate()" value ="Calculate" /></td>
+					<td><input type ="button" onclick = "startOver()" value ="Reset" /></td>
+				</tr>
+	
+	
+	</table>
+
+</form>
+
+</div>
+
+<div id = "loan_info">
+
+</div>
+
+<div id = "table_header">
+	
+	<table cellpadding = "15" border="1">
+		<tr>
+			<td width= "30" align = "center"><b>pmt</b></td>
+			<td width= "60" align = "center"><b>Payment</b></td>
+			<td width= "60" align = "center"><b>Principle</b></td>
+			<td width= "60" align = "center"><b>Interest</b></td>
+			<td width= "85" align = "center"><b>Interest Paid</b></td>
+			<td width= "70" align = "center"><b>Balance</b></td>
+		
+		</tr>
+	
+	</table>
+	
+
+</div>
+
+<div id = "table">
+
+</div>
+
+
+
+</div>
+
+</body>
+
+</html>
